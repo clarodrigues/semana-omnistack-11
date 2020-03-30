@@ -1,0 +1,26 @@
+TECNOLOGIAS UTILIZADAS
+
+Knex, Sqlite
+Importante lembrar de instalar o knex e o driver do banco selecionado.
+Lembrar de rodar o comando: npx knex init
+Esse comando irá criar um arquivo chamado knexfile.js e nele terá as informações
+referente a locais do banco
+
+Comandos para migrates do knex
+No arquivo knexfile.js é necessário incluir um atributo chamado migrations com a informação
+do diretório. No banco sqlite é necessário incluir outro atributo useNullAsDefault
+npx knex migrate:make create_nomeTabela - para criação da create_nomeTabela
+npx knex migrate:latest - para rodar a migrate
+
+ENTIDADES DE DB
+
+Ong, Incident (caso), 
+
+FUNCIONALIDADES
+
+WEB
+Login de ong, Cadastro de ong, Logout de ong, Cadastrar novos casos, Deletar casos, Listar os Casos
+Específicos de uma ong
+
+MOBO
+Listar todos os casos, Entrar em contato via whatsapp e via email
